@@ -1,8 +1,8 @@
 const DB_CERTIFICADOS = {
-    "ESAG-2024-001": {
-        nombre: "Juan Pérez García",
-        curso: "Taller de Gobernanza Ambiental",
-        fecha: "12 de Abril de 2024",
+    "ESAG-2026-001": {
+        nombre: "Matias Aaron Alvarado Ramirez",
+        curso: "Fundacion",
+        fecha: "30 de Abril de 2026",
         entidad: "Dirección General ESAG"
     },
     "ESAG-2024-002": {
