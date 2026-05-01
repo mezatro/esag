@@ -31,7 +31,7 @@ function generarPDF(id) {
     doc.text("CERTIFICADO DE PARTICIPACIÓN", 148, 50, {align: 'center'});
     
     doc.setFontSize(16);
-    doc.text("La Dirección General del ESAG PUCP certifica a:", 148, 70, {align: 'center'});
+    doc.text("La Dirección General del club ESAG PUCP tiene el honor de certificar a:", 148, 70, {align: 'center'});
     
     doc.setFontSize(28);
     doc.setTextColor(10, 74, 52);
@@ -39,8 +39,12 @@ function generarPDF(id) {
     
     doc.setTextColor(0, 0, 0);
     doc.setFontSize(16);
-    doc.text(`Por haber completado el curso: ${cert.curso}`, 148, 110, {align: 'center'});
+    doc.text(`Por haber sido parte de: ${cert.curso}`, 148, 110, {align: 'center'});
     doc.text(`Fecha de emisión: ${cert.fecha}`, 148, 130, {align: 'center'});
+
+
+    doc.setFontSize(11);
+    doc.text(`Codigo de Creendencial: ${codigo}`, 148, 170, {align: 'center'});
     
     doc.save(`Certificado_ESAG_${id}.pdf`);
 }
