@@ -43,7 +43,7 @@ function generarPDF(id) {
     doc.text(`Fecha de emisión: ${cert.fecha}`, 148, 130, {align: 'center'});
 
 
-    const imgFirma = 'assets/firma.png'; 
+    const imgFirma = 'assets/firma-ceo.png'; 
     try {
         doc.addImage(imgFirma, 'assets/firma-ceo.png', 118, 135, 60, 25);
     } catch (e) {
