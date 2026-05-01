@@ -45,7 +45,7 @@ function generarPDF(id) {
 
     const imgFirma = 'assets/firma.png'; 
     try {
-        doc.addImage(imgFirma, 'firma-ceo.png', 118, 135, 60, 25);
+        doc.addImage(imgFirma, 'assets/firma-ceo.png', 118, 135, 60, 25);
     } catch (e) {
         console.error("Firma", e);
     }
