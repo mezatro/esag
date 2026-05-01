@@ -1,0 +1,33 @@
+:root {
+    --esag-green: #0a4a34; /* Verde del logo */
+    --esag-light: #e9f2ee;
+    --white: #ffffff;
+    --text: #333;
+}
+
+body { font-family: 'Inter', sans-serif; color: var(--text); margin: 0; background-color: #f9f9f9; }
+
+nav { background: var(--esag-green); padding: 1rem 5%; color: white; position: sticky; top: 0; z-index: 100; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; font-family: 'Playfair Display'; font-size: 1.2rem; }
+.logo img { height: 40px; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; font-size: 0.9rem; }
+
+.hero { background: linear-gradient(rgba(10, 74, 52, 0.9), rgba(10, 74, 52, 0.9)), url('../assets/pucp-bg.jpg'); background-size: cover; color: white; padding: 100px 5%; text-align: center; }
+.hero h1 { font-family: 'Playfair Display'; font-size: 3rem; }
+.hero span { color: #a1c9b8; }
+
+.section { padding: 80px 5%; max-width: 1200px; margin: auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--esag-green); }
+
+.verify-section { background: var(--esag-light); padding: 80px 5%; display: flex; justify-content: center; }
+.verify-card { background: white; padding: 40px; border-radius: 15px; width: 100%; max-width: 500px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.input-group { display: flex; margin-top: 20px; }
+input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 5px 0 0 5px; outline: none; }
+button { background: var(--esag-green); color: white; border: none; padding: 12px 25px; border-radius: 0 5px 5px 0; cursor: pointer; }
+
+.resultado { margin-top: 20px; display: none; text-align: left; border-top: 1px solid #eee; padding-top: 20px; }
+.success-msg { color: var(--esag-green); font-weight: bold; margin-bottom: 10px; }
+.btn-pdf { width: 100%; margin-top: 15px; background: #333; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }
