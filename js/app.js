@@ -43,9 +43,9 @@ function generarPDF(id) {
     doc.text(`Fecha de emisión: ${cert.fecha}`, 148, 130, {align: 'center'});
 
 
-    const imgFirma = 'assets/firma-ceo.png'; 
+    const imgFirma = 'assets/firma-ceo-trans.png'; 
     try {
-        doc.addImage(imgFirma, 'assets/firma-ceo.png', 118, 135, 60, 25);
+        doc.addImage(imgFirma, 'assets/firma-ceo-trans.png', 118, 135, 60, 25);
     } catch (e) {
         console.error("Firma", e);
     }
@@ -64,7 +64,7 @@ function generarPDF(id) {
 
 
     doc.setFontSize(10);
-    doc.text(`Codigo de Creendencial: ${id}`, 238, 190, {align: 'center'});
+    doc.text(`Código de Credencial: ${id}`, 238, 190, {align: 'center'});
     
     doc.save(`Certificado_ESAG_${id}.pdf`);
 }
