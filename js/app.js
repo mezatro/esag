@@ -64,7 +64,7 @@ function generarPDF(id) {
 
 
     doc.setFontSize(10);
-    doc.text(`Codigo de Creendencial: ${id}`, 188, 190, {align: 'center'});
+    doc.text(`Codigo de Creendencial: ${id}`, 238, 190, {align: 'center'});
     
     doc.save(`Certificado_ESAG_${id}.pdf`);
 }
