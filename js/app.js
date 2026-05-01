@@ -43,8 +43,28 @@ function generarPDF(id) {
     doc.text(`Fecha de emisión: ${cert.fecha}`, 148, 130, {align: 'center'});
 
 
-    doc.setFontSize(11);
-    doc.text(`Codigo de Creendencial: ${id}`, 148, 170, {align: 'center'});
+    const imgFirma = 'assets/firma.png'; 
+    try {
+        doc.addImage(imgFirma, 'firma-ceo.png', 118, 135, 60, 25);
+    } catch (e) {
+        console.error("Firma", e);
+    }
+
+    // 2. Línea de firma
+    doc.setDrawColor(0, 0, 0);
+    doc.setLineWidth(0.5);
+    doc.line(108, 162, 188, 162); // (x1, y1) a (x2, y2)
+
+    // 3. Nombre y Cargo
+    doc.setFontSize(12);
+    doc.text("Matias Aaron Alvarado Ramirez", 148, 168, { align: 'center' });
+    doc.setFontSize(10);
+    doc.text("Director General", 148, 174, { align: 'center' });
+
+
+
+    doc.setFontSize(10);
+    doc.text(`Codigo de Creendencial: ${id}`, 188, 190, {align: 'center'});
     
     doc.save(`Certificado_ESAG_${id}.pdf`);
 }
