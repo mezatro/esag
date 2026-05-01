@@ -5,7 +5,7 @@ const DB_CERTIFICADOS = {
         fecha: "30 de Abril de 2026",
         entidad: "Dirección General ESAG"
     },
-    "ESAG-2024-002": {
+    "ESAG-2024-001": {
         nombre: "María Rodríguez",
         curso: "Seminario de Finanzas Sostenibles",
         fecha: "20 de Mayo de 2024",
